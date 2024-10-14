@@ -49,6 +49,7 @@ body {
 header {
   padding:8px;
   text-align:center;
+  background-image: linear-gradient(to left, navy, dodgerblue);
 
   }
 
