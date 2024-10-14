@@ -16,6 +16,7 @@ body {
   font-variation-settings:
     "MORF" 15,
     "SHLN" 50;
+  font-size:10vh;
 }
 
 .topnav {
