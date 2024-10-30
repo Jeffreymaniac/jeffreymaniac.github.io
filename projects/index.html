@@ -10,13 +10,45 @@
    <link rel="icon" href="https://jeffreymaniac.github.io/src/favicon.png" type="image/png">
     <meta name="author" content="JaecadeJnight"/>
 <style>
-button a::after {
+.card a::after {
   content: " (" attr(href) ")";
   font-style: italic;
   color: gray;
 }
-div button {
 
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 6vw;
+  padding: 0 5px;
+  min-width:325px;
+  color:black;
+}
+
+/* Remove extra left and right margins, due to padding 
+.row {margin: 0 -5px;}*/
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
 }
 </style>
   </head>
@@ -32,58 +64,88 @@ div button {
   <h1>JaecadeJnight's cool projects and apps</h1>
   <p>these are my super cool things lol. It's a bit disorganized, but I'm trying to have the coolest and newest things at the top and the lame/old things at the bottom.</p>
   <br/>
-  
-<button>
-<h2><a href="https://youniverse3d.glitch.me">YOUniverse3D</a></h2>
-<p>this is my epic (web) game and platform that is inspired by Minecraft and Roblox.</p>
-</button>
+  <div class="row">
 
-<button>
+
+  <div class="column">
+    <div class="card">
+      <h2><a href="https://youniverse3d.glitch.me">YOUniverse3D</a></h2>
+      <p>this is my epic (web) game and platform that is inspired by Minecraft and Roblox.</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
 <h2><a href="https://emojimagizer.glitch.me/">Emojimagizer</a></h2>
 <p> it turns emojis into images for your website! Like to replace emojis with apple emojis usually</p>
-</button>
-
-<button>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
 <h2><a href="https://roblox-redesign.glitch.me/">Roblox website redesign</a></h2>
 <p>I had the cool idea to redesign the roblox website to make it look cooler and be easier to navigate. It's extremely unfinished and might not be finished anytime soon.</p>
-</button>
+    </div>
+  </div>
   
-  <button>
+  <div class="column">
+    <div class="card">
 <h2><a href="https://we-love-gojo.glitch.me/">we-love-gojo</a></h2>
 <p>Go here at your own risk lmao. I made this site for my crush and basically it's a gojo shrine</p>
-</button>
-
-  <button>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
 <h2><a href="https://jeffreymaniac.github.io/Technoblade-memorial-page/">Technoblade Memorial Page</a></h2>
 <p>This is a list of stuff about Technoblade, in memory of him since he died.</p>
-</button>
-
-<button>
+    </div>
+  </div>
+    
+  <div class="column">
+    <div class="card">
 <h2><a href="https://jeffreymaniac.github.io/usefulwebcode/">Useful web codes</a></h2>
 <p>I made this cool site a while ago and almost forgot about it lol. It basically just gives you some cool code to spice up your website sorta like a cheet sheet reference for some of the CSS properties like cursor and image filters.</p>
-</button>
+    </div>
+  </div>
     
-<button>
+  <div class="column">
+    <div class="card">
 <h2><a href="https://jeffreymaniac.github.io/Site-for-nintendo-3ds/">Site For Nintendo 3DS</a></h2>
 <p>This is a website I developed for my Nintendo 3DS since almost all the other websites wont load.</p>
-</button>
-
-<button>
+    </div>
+  </div>
+    
+  <div class="column">
+    <div class="card">
 <h2><a href="https://jeffreymaniac.github.io/Beautiful-XML/">Beautiful XML</a></h2>
 <p>Beautiful XML is a CSS library that can be used to style stuff in XML. It can do colors and fonts well so far, and it's a working in progress.</p>
-</button>
-     
-<button>
+    </div>
+  </div>
+    
+  <div class="column">
+    <div class="card">
 <h2><a href="https://jeffreymaniac.github.io/2DGalaxyWorld/">2DGalaxyWorld</a></h2>
 <p>2DGalaxyWorld is a Scratch 2D web game inspired by Minecraft made by me. You can build and destroy things. It's discontinued since it's very laggy, I broke the code multiple times, and I made the code hard to change accidentally after I took a break from being burnt out from working on it, so it sucks. If you can remix it and make it better, then tell me so I could give you a shoutout.</p>
-</button>
-
-  
-<button>
+    </div>
+  </div>
+    
+  <div class="column">
+    <div class="card">
 <h2><a href="https://jeffreymaniac.github.io/virtual-fortune-cookie/">Virtual Fortune Cookie</a></h2>
 <p>This is a virtual fortune cookie message generator.</p>
-</button>
-
+    </div>
+  </div>
+    
+  <div class="column">
+    <div class="card">
+      <h2>coming soon</h2>
+      <p>Some text</p>
+    </div>
+  </div>
+  
+  
+</div>
   
   <p>This website is licensed under the Apache 2.0 license, which you may find the official copy of <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">here</a>.</p>
 </div>
