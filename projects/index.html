@@ -14,19 +14,19 @@
   content: " (" attr(href) ")";
   font-style: italic;
   color: gray;
+  font-size:14px;
 }
 
 /* Float four columns side by side */
 .column {
   float: left;
-  width: 6vw;
+  width: " (" attr(hello) ")";
   padding: 0 5px;
-  min-width:325px;
+  min-width:100px;
   color:black;
 }
 
-/* Remove extra left and right margins, due to padding 
-.row {margin: 0 -5px;}*/
+.row {margin: 0px -5px;}
 
 /* Clear floats after the columns */
 .row:after {
@@ -35,7 +35,6 @@
   clear: both;
 }
 
-/* Responsive columns */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
@@ -49,6 +48,12 @@
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
+  border:dodgerblue solid 5px;
+  
+}
+.card:hover {
+  background-image: linear-gradient(to left, #fad0c4, #ffd1ff);
+  color: white;
 }
 </style>
   </head>
@@ -64,24 +69,25 @@
   <h1>JaecadeJnight's cool projects and apps</h1>
   <p>these are my super cool things lol. It's a bit disorganized, but I'm trying to have the coolest and newest things at the top and the lame/old things at the bottom.</p>
   <br/>
-  <div class="row">
+
+<div class="row">
 
 
-  <div class="column">
+  <div class="column" hello="33.33%">
     <div class="card">
       <h2><a href="https://youniverse3d.glitch.me">YOUniverse3D</a></h2>
       <p>this is my epic (web) game and platform that is inspired by Minecraft and Roblox.</p>
     </div>
   </div>
 
-  <div class="column">
+  <div class="column" hello="33.33%">
     <div class="card">
 <h2><a href="https://emojimagizer.glitch.me/">Emojimagizer</a></h2>
 <p> it turns emojis into images for your website! Like to replace emojis with apple emojis usually</p>
     </div>
   </div>
   
-  <div class="column">
+  <div class="column" hello="33.33%">
     <div class="card">
 <h2><a href="https://roblox-redesign.glitch.me/">Roblox website redesign</a></h2>
 <p>I had the cool idea to redesign the roblox website to make it look cooler and be easier to navigate. It's extremely unfinished and might not be finished anytime soon.</p>
@@ -146,7 +152,6 @@
   
   
 </div>
-  
   <p>This website is licensed under the Apache 2.0 license, which you may find the official copy of <a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank">here</a>.</p>
 </div>
 
