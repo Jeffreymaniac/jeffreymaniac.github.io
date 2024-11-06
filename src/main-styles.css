@@ -52,4 +52,17 @@ header {
   background-image: linear-gradient(to left, navy, dodgerblue);
 
   }
+/* taken from https://codepen.io/TheCodePixi/pen/BajGKRN */
+a {
+  color: black;
+  font-weight: bold;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+  background-clip: text;
+  -webkit-background-clip: text;
+  margin: auto;
+}
 
+a:hover {
+  color: transparent;
+  transition: 500ms ease;
+}
