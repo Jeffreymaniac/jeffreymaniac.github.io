@@ -54,15 +54,14 @@ header {
   }
 /* taken from https://codepen.io/TheCodePixi/pen/BajGKRN */
 a {
-  color: black;
   font-weight: bold;
-  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
-  background-clip: text;
-  -webkit-background-clip: text;
+  background: linear-gradient(90deg, red, orange, yellow, green, blue, purple)!important;
+  background-clip: text!important;
+  -webkit-background-clip: text!important;
   margin: auto;
 }
 
 a:hover {
-  color: transparent;
-  transition: 500ms ease;
+  color: transparent!important;
+  transition: 500ms ease!important;
 }
