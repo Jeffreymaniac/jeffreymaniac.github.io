@@ -19,11 +19,10 @@
 
 .column {
   float: left;
-  width: " (" attr(hello) ")";
+  width: 90%;
   padding: 0 5px;
   min-width:100px;
   color:black;
-  width:90%;
 }
 
 .row {margin: 0px -5px;}
@@ -42,15 +41,19 @@
   padding: 16px;
   text-align: center;
   background-color: #f1f1f1;
-  border:dodgerblue solid 5px;
+  border:rgba(112,128,144,0.2) solid 4.5px;
   width:100%;
   
 }
-.card:hover {
-  background-image: linear-gradient(to left, #fad0c4, #ffd1ff);
-}
+
   .card a {
-  color: MediumSlateBlue;
+  color: navy;
+}
+.card:hover {
+  background-image: linear-gradient(45deg, darkred,#ffd1ff);
+}
+.column .card p:before {
+    content: ' \2764';
 }
 </style>
   </head>
@@ -70,21 +73,21 @@
 <div class="row">
 
 
-  <div class="column" hello="33.33%">
+  <div class="column">
     <div class="card">
       <h2><a href="https://youniverse3d.glitch.me">YOUniverse3D</a></h2>
       <p>this is my epic (web) game and platform that is inspired by Minecraft and Roblox.</p>
     </div>
   </div>
 
-  <div class="column" hello="33.33%">
+  <div class="column">
     <div class="card">
 <h2><a href="https://emojimagizer.glitch.me/">Emojimagizer</a></h2>
 <p> it turns emojis into images for your website! Like to replace emojis with apple emojis usually</p>
     </div>
   </div>
   
-  <div class="column" hello="33.33%">
+  <div class="column">
     <div class="card">
 <h2><a href="https://roblox-redesign.glitch.me/">Roblox website redesign</a></h2>
 <p>I had the cool idea to redesign the roblox website to make it look cooler and be easier to navigate. It's extremely unfinished and might not be finished anytime soon.</p>
