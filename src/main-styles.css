@@ -21,7 +21,7 @@ body {
 
 .topnav {
   overflow: hidden;
-  background-image: linear-gradient(to top, slategray, gray);
+  background-image: linear-gradient(to top, slategray, darkgray);
 }
 
 .topnav a {
@@ -54,7 +54,7 @@ header {
   }
 /* taken from https://codepen.io/TheCodePixi/pen/BajGKRN */
 a {
-  background: linear-gradient(90deg, #b3b3ff, babyblue)!important;
+  background: linear-gradient(90deg, babyblue, #1F51FF)!important;
   background-clip: text!important;
   -webkit-background-clip: text!important;
   margin: auto!important;
@@ -63,5 +63,5 @@ a {
 a:hover {
   color: transparent!important;
   transition: 500ms ease!important;
-    text-shadow: 0px 0px 30px white,0px 0px 30px white,0px 0px 30px white,0px 0px 10px white,0px 0px 10px almond;
+    text-shadow: 0px 0px 30px white,0px 0px 30px white,0px 0px 30px white,0px 0px 10px white,0px 0px 10px almond!important;
 }
