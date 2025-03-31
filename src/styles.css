@@ -67,7 +67,10 @@ a:hover {
 
 img{border-style:none}
 [hidden],template{display:none}
-button{-webkit-appearance:button;cursor:pointer}
+button,[type="button"],[type="reset"],[type="submit"]{
+  -webkit-appearance:button;
+  cursor:pointer;
+}
 footer {
   width:100%;
   margin-top:8px;
@@ -77,4 +80,5 @@ footer {
   background-position:right;
   background-repeat:no-repeat;
   color:white;
+  background-size:cover;
 }
