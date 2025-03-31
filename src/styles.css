@@ -14,12 +14,13 @@ html,body {
   color:white;
   width:100%;
   height:100%;
+  overflow-x:hidden;
 }
 .myname {
   font-family: "Audiowide",display, system-ui;
   font-optical-sizing: auto;
   font-weight: 400;
-  font-size:80%;
+  font-size:100px;
   text-align:center;
 }
 
@@ -67,3 +68,8 @@ a:hover {
 img{border-style:none}
 [hidden],template{display:none}
 button{-webkit-appearance:button;cursor:pointer}
+footer {
+  width:100%;
+  margin-top:8px;
+  background-image:url(https://upload.wikimedia.org/wikipedia/commons/a/af/Palma_S.Domingo.jpg);
+}
