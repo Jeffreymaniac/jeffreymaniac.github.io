@@ -19,7 +19,10 @@ body{margin:0}
 .myname {
   font-family: "Audiowide",display, system-ui;
   font-weight: 400;
-  font-size:min(3.5em,80px);
+  font-size:100px;
+    @media only screen and (max-width:600px) {
+      font-size:45px;
+    }
 }
 
 .topnav {
@@ -52,17 +55,13 @@ header {
   background-color:#030133;
   background-image: linear-gradient(315deg, #030133, #3701EB);
   }
-/* taken from https://codepen.io/TheCodePixi/pen/BajGKRN */
+
 a {
-  background-image: linear-gradient(90deg, MediumSlateBlue, #1F51FF)!important;
-  background-clip: text!important;
-  -webkit-background-clip: text!important;
-  margin: auto!important;
   color:dodgerblue;
 }
 
 a:hover {
-  color: transparent!important;
+opacity:.9;
   transition: 500ms ease!important;
   text-shadow: -1px 0 1px white,
     1px 0 2px white,
