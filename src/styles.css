@@ -28,6 +28,7 @@ font-family:'Rubik Doodle Shadow',display;
   background-image: linear-gradient(to top, slategray, darkgray);
   width:100%;
   display:block;
+  overflow-x:scroll;
 }
 
 .topnav a {
@@ -52,6 +53,7 @@ header {
   text-align:center;
   background-color:#030133;
   background-image: linear-gradient(315deg, #030133, #3701EB);
+  overscroll-behavior:none;
   }
 
 a {
@@ -86,6 +88,7 @@ footer {
   background-repeat:no-repeat;
   color:white;
   background-size:cover;
+  overscroll-behavior-y: contain;
   @media only screen and (min-width:992px) {
 color:black
   }
