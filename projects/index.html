@@ -2,7 +2,7 @@
 <html lang="en-US">
   <head>
     <meta charset="UTF-8" />
-    <title>JaecadeJnight's apps and projects</title>
+    <title>JaecadeJnight's projects and stuff</title>
     <meta property="og:title" content="JaecadeJnight's apps and projects" />
     
     <link rel="stylesheet" href="https://jeffreymaniac.github.io/src/styles.css" />
@@ -60,6 +60,9 @@
 .column .card p:before {
     content: ' \2764';
 }
+  .hiding{
+    display:none;
+  }
 </style>
   </head>
 <body>
@@ -71,12 +74,12 @@
 </div>
 
 <div style="padding-left:16px">
-  <h1>JaecadeJnight's cool projects and apps</h1>
-  <p>These are all my super cool projects and things that i've made lol. It's a bit disorganized, but I'm trying to have the coolest and newest things at the top and the lame/old things at the bottom. </p>
+  <h1>JaecadeJnight's cool projects and stuff</h1>
+  <p>These are all my projects and things that I've made. It's a bit disorganized, but I'm trying to have the coolest and newest things at the top and the lame/old things at the bottom. </p>
   <p><a href="#sitesForPpl">Scroll down to see sites I've made for other people</a></p>
   <br/>
-
-<div class="row">
+<button onclick="document.querySelector('#projects').classList.toggle('hiding')">Show/hide projects</button>
+<div class="row" id="projects">
 
 
   <div class="column">
