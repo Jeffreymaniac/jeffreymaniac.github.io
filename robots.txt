@@ -1,3 +1,8 @@
+# Fuck clankers!
+User-agent: *
+DisallowAITraining: /
+Content-Usage: ai=n
+
 # Block specific bad bots
 User-agent: sitecheck.internetseer.com
 Disallow: /
