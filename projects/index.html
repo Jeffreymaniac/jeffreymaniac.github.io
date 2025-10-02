@@ -30,7 +30,7 @@
   color:black;
 }
 
-.row {margin: 0px -5px;}
+.row {margin: 0 -5px}
 
 /* Clear floats after the columns */
 .row:after {
@@ -60,17 +60,14 @@
 .column .card p:before {
     content: ' \2764';
 }
-  .hiding{
-    display:none;
-  }
 </style>
-  </head>
+</head>
 <body>
   
-    <div class="topnav">
+  <div class="topnav">
   <a href="https://jeffreymaniac.github.io/">JaecadeJnight</a>
   <a class="active" href="https://jeffreymaniac.github.io/projects/">My epic projects</a>
-      <a href="https://jeffreymaniac.github.io/articles">Articles</a>
+  <a href="https://jeffreymaniac.github.io/articles">Articles</a>
 </div>
 
 <div style="padding-left:16px">
@@ -78,23 +75,16 @@
   <p>These are all my projects and things that I've made. It's a bit disorganized, but I'm trying to have the coolest and newest things at the top and the lame/old things at the bottom. </p>
   <p><a href="#sitesForPpl">Scroll down to see sites I've made for other people</a></p>
   <br/>
-<button style="padding:2px;color:black;font:inherit;width:50%" onclick="document.querySelector('#projects').classList.toggle('hiding')">Show/hide projects</button>
+<button style="padding:2px;color:black;font:inherit;width:50%" onclick="document.querySelector('#projects').toggleAttribute('hidden')">Show/hide projects</button>
 <br>
   
   <div class="row" id="projects">
 
 
-  <div class="column">
+  <div class="column" hidden>
     <div class="card">
       <h2><a href="https://yn3d.glitch.me" target="_blank">YOUniverse3D</a></h2>
       <p>this is my epic (web) game and platform that is inspired by Minecraft and Roblox.</p>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-<h2><a href="https://emojimagizer.glitch.me/" target="_blank">Emojimagizer</a></h2>
-<p> it turns emojis into images for your website! Like to replace emojis with apple emojis usually</p>
     </div>
   </div>
   
@@ -114,7 +104,7 @@
   
     <div class="column">
     <div class="card">
-      <h2><a href="https://jeffreymaniac.github.io/WebzyOS" target="_blank">WebzyOS</a></h2>
+      <h2><a href="https://jeffreymaniac.github.io/WebradorOS" target="_blank">WebradorOS</a></h2>
       <p>A cool (and unfinished) web OS project.</p>
     </div>
   </div>
