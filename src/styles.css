@@ -1,8 +1,8 @@
-@import url(https://fonts.bunny.net/css?family=audiowide:400|rubik-doodle-shadow:400);
+@import url(https://fonts.bunny.net/css?family=audiowide:400|rubik-doodle-shadow:400|comic-neue:400);
 
 * {
 box-sizing:border-box;
-font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Helvetica", "Helvetica Neue", sans-serif, arial,"Apple Color Emoji","Segoe UI Emoji";
+font-family:"Segoe UI","Helvetica Neue", "Helvetica", Arial,sans-serif;
 }
 html{
 line-height:1.15;
@@ -17,60 +17,57 @@ html,body {
   margin:0;
 }
 .myname {
-  font-family: "Audiowide",display, system-ui;
+  font-family:"Audiowide",display, system-ui;
   font-size:6vw;
 }
-h1,h2,h3,h4,h5{
-font-family:'Rubik Doodle Shadow',display;
-}
+h1,h2{font-family:'Rubik Doodle Shadow',display}
+h3,h4,h5,h6{font-family:'Comic Neue',"Comic Sans MS",Chalkboard}
 .topnav {
-  overflow: hidden;
-  background-image: linear-gradient(to top, slategray, darkgray);
+  overflow:hidden;
+  background-image:linear-gradient(to top, slategray, darkgray);
   width:100%;
   display:block;
   overflow-x:scroll;
 }
 
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
+.topnav a{
+  float:left;
+  color:#f2f2f2;
+  text-align:center;
+  padding:14px 16px;
+  text-decoration:none;
+  font-size:17px;
 }
 
-.topnav a.active {
-  background-color: #04AA6D!important;
-  color: white;
+.topnav a.active{
+  background-color:#04AA6D!important;
+  color:#fff;
 }
 
 .mg16{margin:16px}
-header {
+header{
   display:block;
   width:100%;
   padding:8px;
   text-align:center;
   background-color:#030133;
-  background-image: linear-gradient(315deg, #030133, #3701EB);
+  background-image:linear-gradient(315deg, #030133, #3701EB);
   overscroll-behavior:none;
   }
 
-a {
-  color:dodgerblue;
-}
+a{color:dodgerblue}
 
-a:hover {
+a:hover{
 opacity:.9;
-  transition: 500ms ease!important;
-  text-shadow: -1px 0 1px white,
-    1px 0 2px white,
-    0 1px 2px white,
-    0 -1px 2px white,
+transition: 500ms ease!important;
+text-shadow: -1px 0 1px #fff,
+    1px 0 2px #fff,
+    0 1px 2px #fff,
+    0 -1px 2px #fff,
     0 0 4px grey
     !important;
 }
-small {color:#A8DADC;font-size:80%;}
+small{color:#A8DADC;font-size:80%}
 img{border-style:none}
 [hidden],template{display:none}
 button,[type="button"],[type="reset"],[type="submit"]{
@@ -78,7 +75,7 @@ button,[type="button"],[type="reset"],[type="submit"]{
   cursor:pointer;
   background-color:#A8DADC;
 }
-footer {
+footer{
   width:100%;
   margin-top:8px;
   padding:5px;
@@ -90,6 +87,6 @@ footer {
   background-size:cover;
   overscroll-behavior-y: contain;
   @media only screen and (min-width:992px) {
-color:black
+color:#000
   }
 }
